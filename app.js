@@ -26,8 +26,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSWORD);
-mongoose.connect(DB, { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect("mongodb+srv://admin-shiv:jSbbBM83Ru2mi4wZ@cluster0-vcdq6.mongodb.net/userDB", { useNewUrlParser: true, useCreateIndex: true });
 
 const userSchema = new mongoose.Schema({
     email: String,
@@ -168,12 +167,7 @@ app.post("/login", function(req, res) {
 
 });
 
-
-
-
-
-
 ///////////////////////////////////////
-app.listen(process.env.PORT||3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server started successfully.");
 });

@@ -24,5 +24,5 @@
     "keywords": [],
     "author": "Shiv Kumar",
     "license": "ISC",
-    "engines":{"node":"12.6.0"}
+    "engines": { "node": "12.6.0" }
 }

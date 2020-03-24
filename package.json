@@ -23,5 +23,6 @@
     },
     "keywords": [],
     "author": "Shiv Kumar",
-    "license": "ISC"
+    "license": "ISC",
+    "engines":{"12.6.0"}
 }
